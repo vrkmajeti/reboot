@@ -33,13 +33,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.Core">
-      <HintPath>..\Website\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+      <HintPath>..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
     </Reference>
     <Reference Include="Glass.Mapper">
-      <HintPath>..\Website\packages\Glass.Mapper.3.0.10.23\lib\net45\Glass.Mapper.dll</HintPath>
+      <HintPath>..\packages\Glass.Mapper.3.0.10.23\lib\net45\Glass.Mapper.dll</HintPath>
     </Reference>
     <Reference Include="Glass.Mapper.Sc">
-      <HintPath>..\Website\packages\Glass.Mapper.Sc.3.1.10.31\lib\net45\Glass.Mapper.Sc.dll</HintPath>
+      <HintPath>..\packages\Glass.Mapper.Sc.3.1.10.31\lib\net45\Glass.Mapper.Sc.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

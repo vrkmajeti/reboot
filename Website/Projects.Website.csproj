@@ -55,13 +55,11 @@
     <Reference Include="Antlr3.Runtime">
       <HintPath>packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="AutoMapper, Version=3.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\AutoMapper.3.2.1\lib\net40\AutoMapper.dll</HintPath>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.2.1\lib\net40\AutoMapper.dll</HintPath>
     </Reference>
-    <Reference Include="AutoMapper.Net4, Version=3.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\AutoMapper.3.2.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\packages\AutoMapper.3.2.1\lib\net40\AutoMapper.Net4.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -74,17 +72,19 @@
     <Reference Include="Castle.Windsor">
       <HintPath>packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
     </Reference>
-    <Reference Include="Glass.Mapper">
-      <HintPath>packages\Glass.Mapper.3.0.10.23\lib\net45\Glass.Mapper.dll</HintPath>
+    <Reference Include="Glass.Mapper, Version=3.0.10.23, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Glass.Mapper.3.0.10.23\lib\net45\Glass.Mapper.dll</HintPath>
     </Reference>
-    <Reference Include="Glass.Mapper.Sc">
-      <HintPath>packages\Glass.Mapper.Sc.3.1.10.31\lib\net45\Glass.Mapper.Sc.dll</HintPath>
+    <Reference Include="Glass.Mapper.Sc, Version=3.1.10.31, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Glass.Mapper.Sc.3.1.10.31\lib\net45\Glass.Mapper.Sc.dll</HintPath>
     </Reference>
     <Reference Include="Glass.Mapper.Sc.CastleWindsor">
-      <HintPath>packages\Glass.Mapper.Sc.CastleWindsor.3.2.0.17\lib\net45\Glass.Mapper.Sc.CastleWindsor.dll</HintPath>
+      <HintPath>..\packages\Glass.Mapper.Sc.CastleWindsor.3.2.0.17\lib\net45\Glass.Mapper.Sc.CastleWindsor.dll</HintPath>
     </Reference>
     <Reference Include="Glass.Mapper.Sc.Razor">
-      <HintPath>packages\Glass.Mapper.Sc.Razor.3.0.8.12\lib\net45\Glass.Mapper.Sc.Razor.dll</HintPath>
+      <HintPath>..\packages\Glass.Mapper.Sc.Razor.3.0.8.12\lib\net45\Glass.Mapper.Sc.Razor.dll</HintPath>
     </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -124,7 +124,7 @@
       <HintPath>..\Packages\Sitecore\RadEditor.Net2.dll</HintPath>
     </Reference>
     <Reference Include="RazorEngine">
-      <HintPath>packages\RazorEngine.3.2.0\lib\net40\RazorEngine.dll</HintPath>
+      <HintPath>..\packages\RazorEngine.3.2.0\lib\net40\RazorEngine.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Analytics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -351,7 +351,7 @@
       <HintPath>..\Packages\Sitecore\Telerik.Web.UI.Skins.dll</HintPath>
     </Reference>
     <Reference Include="WebActivatorEx">
-      <HintPath>packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <HintPath>packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -381,6 +381,10 @@
       <DependentUpon>reboot.less</DependentUpon>
     </Content>
     <Content Include="css\theme.css" />
+    <Content Include="Data\diagnostics\readme.txt" />
+    <Content Include="Data\logs\readme.txt" />
+    <Content Include="Data\Packages\Glass.Mapper.Sc.Razor.Package.xml" />
+    <Content Include="Data\viewstate\readme.txt" />
     <Content Include="font-awesome\css\font-awesome.css" />
     <Content Include="font-awesome\css\font-awesome.min.css" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
@@ -399,6 +403,236 @@
     <Content Include="App_Config\Include\Z.Reboot.Solr.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="App_Config\Include\Glass.Mapper.Sc.Mvc.config" />
+    <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
+    <Content Include="Data\indexes\sitecore_core_index\lucene-0a3c7fc9d8b1b5a0e65d95bf9296154b-write.lock" />
+    <Content Include="Data\indexes\sitecore_core_index\segments.gen" />
+    <Content Include="Data\indexes\sitecore_core_index\segments_so" />
+    <Content Include="Data\indexes\sitecore_core_index\_3l8.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3l8_1.del" />
+    <Content Include="Data\indexes\sitecore_core_index\_3le.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3le_5.del" />
+    <Content Include="Data\indexes\sitecore_core_index\_3lk.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3lk_3.del" />
+    <Content Include="Data\indexes\sitecore_core_index\_3lr.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3lr_2.del" />
+    <Content Include="Data\indexes\sitecore_core_index\_3ly.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3ly_2.del" />
+    <Content Include="Data\indexes\sitecore_core_index\_3m5.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3m5_4.del" />
+    <Content Include="Data\indexes\sitecore_core_index\_3mc.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3mc_2.del" />
+    <Content Include="Data\indexes\sitecore_core_index\_3mj.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3mj_2.del" />
+    <Content Include="Data\indexes\sitecore_core_index\_3mq.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3mq_1.del" />
+    <Content Include="Data\indexes\sitecore_core_index\_3mx.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3mx_1.del" />
+    <Content Include="Data\indexes\sitecore_core_index\_3n4.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3n4_2.del" />
+    <Content Include="Data\indexes\sitecore_core_index\_3nb.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3nb_3.del" />
+    <Content Include="Data\indexes\sitecore_core_index\_3ni.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3ni_2.del" />
+    <Content Include="Data\indexes\sitecore_core_index\_3nq.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3nq_1.del" />
+    <Content Include="Data\indexes\sitecore_core_index\_3nx.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3o4.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3ob.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3oi.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3oo.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3ou.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3p0.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3p7.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3pe.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3pl.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3ps.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3pz.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3q6.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3qd.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3qk.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3qr.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3qy.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3r6.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3re.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3rm.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3ru.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3s2.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3sa.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3sh.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3so.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3sv.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3t3.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3tb.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3tj.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3tr.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3tt.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3tt_2.del" />
+    <Content Include="Data\indexes\sitecore_core_index\_3tu.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3tu_4.del" />
+    <Content Include="Data\indexes\sitecore_core_index\_3tz.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3u5.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3ub.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3uh.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3ui.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3uo.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3uu.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3v0.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3v6.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3vc.cfs" />
+    <Content Include="Data\indexes\sitecore_core_index\_3vi.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\lucene-c270aa520086cd6e7dbf8f0e172c426f-write.lock" />
+    <Content Include="Data\indexes\sitecore_master_index\segments.gen" />
+    <Content Include="Data\indexes\sitecore_master_index\segments_fh8" />
+    <Content Include="Data\indexes\sitecore_master_index\_1dfr.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_1dfr_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgk.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgk_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgs.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgs_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgv.fdt" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgv.fdx" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgv.fnm" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgv.frq" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgv.nrm" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgv.prx" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgv.tii" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgv.tis" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgv.tvd" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgv.tvf" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgv.tvx" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgv_l1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgw.fdt" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgw.fdx" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgw.fnm" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgw.frq" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgw.nrm" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgw.prx" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgw.tii" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgw.tis" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgw.tvd" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgw.tvf" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgw.tvx" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgw_5b.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgx.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgy.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sgz.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_1sh0.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_20jl.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_20jl_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_26et.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_26f1.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_26f1_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_26f9.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_26f9_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_26fh.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_26hu.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_26hu_6m.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_26hx.fdt" />
+    <Content Include="Data\indexes\sitecore_master_index\_26hx.fdx" />
+    <Content Include="Data\indexes\sitecore_master_index\_26hx.fnm" />
+    <Content Include="Data\indexes\sitecore_master_index\_26hx.frq" />
+    <Content Include="Data\indexes\sitecore_master_index\_26hx.nrm" />
+    <Content Include="Data\indexes\sitecore_master_index\_26hx.prx" />
+    <Content Include="Data\indexes\sitecore_master_index\_26hx.tii" />
+    <Content Include="Data\indexes\sitecore_master_index\_26hx.tis" />
+    <Content Include="Data\indexes\sitecore_master_index\_26hx.tvd" />
+    <Content Include="Data\indexes\sitecore_master_index\_26hx.tvf" />
+    <Content Include="Data\indexes\sitecore_master_index\_26hx.tvx" />
+    <Content Include="Data\indexes\sitecore_master_index\_26hy.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_26hz.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_26i0.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2dxb.fdt" />
+    <Content Include="Data\indexes\sitecore_master_index\_2dxb.fdx" />
+    <Content Include="Data\indexes\sitecore_master_index\_2dxb.fnm" />
+    <Content Include="Data\indexes\sitecore_master_index\_2dxb.frq" />
+    <Content Include="Data\indexes\sitecore_master_index\_2dxb.nrm" />
+    <Content Include="Data\indexes\sitecore_master_index\_2dxb.prx" />
+    <Content Include="Data\indexes\sitecore_master_index\_2dxb.tii" />
+    <Content Include="Data\indexes\sitecore_master_index\_2dxb.tis" />
+    <Content Include="Data\indexes\sitecore_master_index\_2dxb.tvd" />
+    <Content Include="Data\indexes\sitecore_master_index\_2dxb.tvf" />
+    <Content Include="Data\indexes\sitecore_master_index\_2dxb.tvx" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gso.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gsu.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gsu_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gt0.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gt6.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gt6_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gtc.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gti.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gti_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gto.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gto_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gu9.fdt" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gu9.fdx" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gu9.fnm" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gu9.frq" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gu9.nrm" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gu9.prx" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gu9.tii" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gu9.tis" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gu9.tvd" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gu9.tvf" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gu9.tvx" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gua.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2gub.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l6a.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l6a_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l6g.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l6m.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l6m_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l6r.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l6r_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l6w.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l71.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l71_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l76.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7b.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7b_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7g.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7g_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7l.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7l_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7r.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7v.fdt" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7v.fdx" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7v.fnm" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7v.frq" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7v.nrm" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7v.prx" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7v.tii" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7v.tis" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7v.tvd" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7v.tvf" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7v.tvx" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7x.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l7x_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l82.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l82_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l87.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l8c.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l8c_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l8h.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l8h_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l8m.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l8r.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l8r_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l8w.cfs" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l8w_1.del" />
+    <Content Include="Data\indexes\sitecore_master_index\_2l92.cfs" />
+    <Content Include="Data\indexes\sitecore_web_index\lucene-410a8c8c61cbcb6faaed597cc01d52cc-write.lock" />
+    <Content Include="Data\indexes\sitecore_web_index\segments.gen" />
+    <Content Include="Data\indexes\sitecore_web_index\segments_2" />
+    <Content Include="Data\indexes\sitecore_web_index\_0.cfs" />
+    <Content Include="Data\indexes\__system\lucene-8ad03bfdb8ba6ed04314cb7eafffd325-write.lock" />
+    <Content Include="Data\indexes\__system\segments.gen" />
+    <Content Include="Data\indexes\__system\segments_1wy" />
+    <Content Include="Data\indexes\__system\_16j.cfs" />
+    <Content Include="Data\indexes\__system\_16j.cfx" />
+    <Content Include="Data\Packages\Glass.Mapper.Sc.Razor.Package.zip" />
+    <Content Include="Data\webdav.lic" />
+    <Content Include="App_Config\Include\Glass.Mapper.Sc.Razor.config" />
     <None Include="Properties\PublishProfiles\Reboot.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -437,6 +671,10 @@
     <Content Include="Views\Movie\Movies.cshtml" />
     <Content Include="Views\Search\FacetList.cshtml" />
     <Content Include="Views\Search\Facet.cshtml" />
+    <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\Templates\TypedRazorTemplate.cshtml.temp" />
+    <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\Templates\DynamicRazorTemplate.cshtml.temp" />
+    <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\Templates\BehindRazorTemplate.cshtml.temp" />
+    <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\Templates\BehindRazorTemplate.cshtml.cs.temp" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Movie\Controllers\" />
@@ -468,7 +706,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Commands.config" />
-    <Content Include="App_Config\ConnectionStrings.config" />
+    <Content Include="App_Config\ConnectionStrings.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Config\ConnectionStringsOracle.config" />
     <Content Include="App_Config\FieldTypes.config" />
     <Content Include="App_Config\Icons.config" />
@@ -523,16 +763,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Glass.Mapper.Sc.Mvc.config" />
-    <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
-    <Content Include="App_Config\Include\Glass.Mapper.Sc.Razor.config" />
     <Content Include="App_Config\Include\Sitecore.ContentSearch.VerboseLogging.config" />
     <Content Include="App_Config\Include\Z.Reboot.MVC.config" />
     <Content Include="App_Config\Include\Z.RebootDiscoverModels.config" />
-    <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\Templates\TypedRazorTemplate.cshtml.temp" />
-    <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\Templates\DynamicRazorTemplate.cshtml.temp" />
-    <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\Templates\BehindRazorTemplate.cshtml.temp" />
-    <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\Templates\BehindRazorTemplate.cshtml.cs.temp" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.eot" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.ttf" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.woff" />
@@ -624,5 +857,5 @@
     </PropertyGroup>
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
   </Target>
-  <Import Project="packages\AutoMapper.3.2.1\tools\AutoMapper.targets" Condition="Exists('packages\AutoMapper.3.2.1\tools\AutoMapper.targets')" />
+  <Import Project="..\packages\AutoMapper.3.2.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.2.1\tools\AutoMapper.targets')" />
 </Project>

@@ -26,7 +26,7 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreDeployFolder>E:\One Drive\OneDrive\work\reboot\website</SitecoreDeployFolder>
+    <SitecoreDeployFolder>C:\Development\Websites\reboot\Website</SitecoreDeployFolder>
     <SitecoreWebUrl>http://local.reboot.com</SitecoreWebUrl>
     <SitecoreAccessGuid>dacd140a-8401-49a7-9552-03a1562eb00f</SitecoreAccessGuid>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>

@@ -5,8 +5,8 @@ using Castle.Windsor;
 using Glass.Mapper.Configuration;
 using Glass.Mapper.Sc.CastleWindsor;
 using Projects.Reboot.Common;
-using Projects.Reboot.Core.DI;
 using Projects.Reboot.DataMigration.DI;
+using Projects.Reboot.Services.DI;
 
 namespace Projects.Website.App_Start
 {

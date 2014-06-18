@@ -41,7 +41,7 @@
     <SitecoreWebUrl>http://local.reboot.com</SitecoreWebUrl>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <DisableFileDeployment>True</DisableFileDeployment>
-    <SitecoreDeployFolder>E:\One Drive\OneDrive\work\reboot2\Website1</SitecoreDeployFolder>
+    <SitecoreDeployFolder>C:\Development\Websites\reboot\Website</SitecoreDeployFolder>
     <SitecoreAccessGuid>dacd140a-8401-49a7-9552-03a1562eb00f</SitecoreAccessGuid>
     <EnableValidations>False</EnableValidations>
     <ValidationSettingsFilePath>.\Reboot.TDS_Debug.xml</ValidationSettingsFilePath>

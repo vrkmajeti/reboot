@@ -21,10 +21,10 @@ namespace Projects.Reboot.Core.Indexer
             SitecoreContext = context;
         }
 
-        public CastAndCrew()
-        {
-            SitecoreContext = new SitecoreService(Sitecore.Context.Database);
-        }
+        //public CastAndCrew()
+        //{
+        //    SitecoreContext = new SitecoreService(Sitecore.Context.Database);
+        //}
 
         public object ComputeFieldValue(IIndexable indexable)
         {

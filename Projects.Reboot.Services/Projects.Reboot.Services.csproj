@@ -34,28 +34,39 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.Core">
-      <HintPath>..\Website\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+      <HintPath>..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
     </Reference>
     <Reference Include="Glass.Mapper">
-      <HintPath>..\Website\packages\Glass.Mapper.3.0.10.23\lib\net45\Glass.Mapper.dll</HintPath>
+      <HintPath>..\packages\Glass.Mapper.3.0.10.23\lib\net45\Glass.Mapper.dll</HintPath>
     </Reference>
     <Reference Include="Glass.Mapper.Sc">
-      <HintPath>..\Website\packages\Glass.Mapper.Sc.3.1.10.31\lib\net45\Glass.Mapper.Sc.dll</HintPath>
+      <HintPath>..\packages\Glass.Mapper.Sc.3.1.10.31\lib\net45\Glass.Mapper.Sc.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.ContentSearch">
       <HintPath>..\Packages\Sitecore\Sitecore.ContentSearch.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.ContentSearch.Linq">
-      <HintPath>E:\One Drive\OneDrive\work\Reboot\Packages\Sitecore\Sitecore.ContentSearch.Linq.dll</HintPath>
+      <HintPath>..\packages\Sitecore\Sitecore.ContentSearch.Linq.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.ContentSearch.Linq.Solr">
-      <HintPath>E:\One Drive\OneDrive\work\Reboot\Packages\Sitecore\Sitecore.ContentSearch.Linq.Solr.dll</HintPath>
+      <HintPath>..\packages\Sitecore\Sitecore.ContentSearch.Linq.Solr.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\Packages\Sitecore\Sitecore.Kernel.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Mvc">
+      <HintPath>..\Packages\Sitecore\Sitecore.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Sitecore\System.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,6 +75,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonTextService.cs" />
+    <Compile Include="DI\ControllerInstaller.cs" />
+    <Compile Include="DI\RebootInstaller.cs" />
+    <Compile Include="DI\WindsorControllerFactory.cs" />
     <Compile Include="MovieSearchService.cs" />
     <Compile Include="SearchServiceBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,7 +113,7 @@
       <Name>Projects.Reboot.Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\Reboot.Services\Projects.Reboot.Common.csproj">
-      <Project>{cf715d87-db60-42fa-a4ed-352e37d81c9b}</Project>
+      <Project>{CF715D87-DB60-42FA-A4ED-352E37D81C9B}</Project>
       <Name>Projects.Reboot.Common</Name>
     </ProjectReference>
   </ItemGroup>
